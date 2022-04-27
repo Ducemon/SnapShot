@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.android.navigation.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_camFragment"
+            app:destination="@id/camFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/camFragment"
+        android:name="com.example.snapshot.CamFragment"
+        android:label="CamFragment"
+        tools:layout="@layout/camera_fragment"/>
+</navigation>
