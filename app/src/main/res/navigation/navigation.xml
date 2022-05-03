@@ -11,13 +11,12 @@
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" >
         <action
-            android:id="@+id/action_titleFragment_to_camFragment"
-            app:destination="@id/camFragment" />
+            android:id="@+id/action_titleFragment_to_cameraXFragment"
+            app:destination="@id/cameraXFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/camFragment"
-        android:name="com.example.snapshot.CamFragment"
-        android:label="CamFragment"
-        tools:layout="@layout/camera_fragment"/>
+        android:id="@+id/cameraXFragment"
+        android:name="com.example.snapshot.CameraXFragment"
+        android:label="CameraXFragment" />
 </navigation>

@@ -3,23 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".CamFragment">
+    tools:context=".CameraXFragment">
 
     <data>
         <variable
             name="camera"
-            type="com.example.snapshot.CamFragment" />
+            type="com.example.snapshot.CameraXFragment" />
     </data>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/black">
 
-        <io.fotoapparat.view.CameraView
-            android:id="@+id/camera_view"
+        <androidx.camera.view.PreviewView
+            android:id="@+id/viewFinder"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/fab_camera" />
+            android:layout_height="match_parent" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_camera"
@@ -32,29 +31,6 @@
             android:layout_centerHorizontal="true"
             app:backgroundTint="@android:color/white"/>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_flash"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="32dp"
-            android:src="@drawable/ic_baseline_flash_on_24"
-            app:backgroundTint="@android:color/white"
-            app:fabSize="normal" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_switch_camera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="normal"
-            android:src="@drawable/ic_baseline_switch_camera_24"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="32dp"
-            android:layout_alignParentEnd="true"
-            app:backgroundTint="@android:color/white"/>
 
     </RelativeLayout>
 
