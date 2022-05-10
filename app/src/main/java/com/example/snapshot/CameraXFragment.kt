@@ -1,7 +1,6 @@
 package com.example.snapshot
 
 import android.Manifest
-import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.pm.PackageManager
 import android.os.Build
@@ -14,7 +13,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
-import androidx.camera.video.*
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
@@ -24,8 +22,6 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-
-typealias LumaListener = (luma: Double) -> Unit
 
 
 class CameraXFragment: Fragment() {
@@ -39,13 +35,11 @@ class CameraXFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
         super.onCreate(savedInstanceState)
 
         viewBinding = DataBindingUtil.inflate(
             inflater, R.layout.camera_fragment, container, false)
-
-//        if (viewBinding != null) {
 
         if (allPermissionsGranted()) {
             startCamera()
@@ -65,28 +59,6 @@ class CameraXFragment: Fragment() {
 
         return viewBinding.root
     }
-
-//    @SuppressLint("MissingPermission")
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-//        if (allPermissionsGranted()) {
-//            startCamera()
-//        }
-//        else {
-//            activity?.let {
-//                ActivityCompat.requestPermissions(
-//                    it, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
-//            }
-//        }
-//
-//        // Initialize our background executor
-//        cameraExecutor = Executors.newSingleThreadExecutor()
-//
-//        viewBinding.fabCamera.setOnClickListener {
-//            takePhoto()
-//        }
-//    }
 
     override fun onRequestPermissionsResult(
         requestCode: Int, permissions: Array<String>, grantResults:
@@ -127,7 +99,7 @@ class CameraXFragment: Fragment() {
                     contentValues)
                 .build()
         }
-
+        Log.e("PULA", MediaStore.Images.Media.EXTERNAL_CONTENT_URI.toString())
         // Set up image capture listener, which is triggered after photo has
         // been taken
         if (outputOptions != null) {

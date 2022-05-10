@@ -1,4 +1,4 @@
-package com.example.android.navigation
+package com.example.snapshot
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.snapshot.R
 import com.example.snapshot.databinding.FragmentTitleBinding
 
 
@@ -16,12 +15,14 @@ class TitleFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater,
             R.layout.fragment_title,container, false)
         binding.playButton.setOnClickListener{view : View ->
             view.findNavController().navigate(R.id.action_titleFragment_to_cameraXFragment)}
+        binding.galleryButton.setOnClickListener{view : View ->
+            view.findNavController().navigate(R.id.action_titleFragment_to_scrollingFragment)}
         return binding.root
 
 

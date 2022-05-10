@@ -4,9 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/camera_fragment.xml" value="0.1" />
         <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_activity.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_title.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_gallery.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_item.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_photo.xml" value="1.25" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_photo_gallery.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_recyclerview_gallery.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_scrolling.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/fragment_title.xml" value="0.5" />
+        <entry key="..\:/Users/Vlad/AndroidStudioProjects/SnapShot/app/src/main/res/layout/image_item_view.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

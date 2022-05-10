@@ -7,16 +7,24 @@
 
     <fragment
         android:id="@+id/titleFragment"
-        android:name="com.example.android.navigation.TitleFragment"
+        android:name="com.example.snapshot.TitleFragment"
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" >
         <action
             android:id="@+id/action_titleFragment_to_cameraXFragment"
             app:destination="@id/cameraXFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_scrollingFragment"
+            app:destination="@id/scrollingFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/cameraXFragment"
         android:name="com.example.snapshot.CameraXFragment"
         android:label="CameraXFragment" />
+    <fragment
+        android:id="@+id/scrollingFragment"
+        android:name="com.example.snapshot.ScrollingFragment"
+        android:label="fragment_scrolling"
+        tools:layout="@layout/fragment_scrolling" />
 </navigation>
