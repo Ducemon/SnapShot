@@ -23,6 +23,7 @@ class TitleFragment : Fragment() {
             view.findNavController().navigate(R.id.action_titleFragment_to_cameraXFragment)}
         binding.galleryButton.setOnClickListener{view : View ->
             view.findNavController().navigate(R.id.action_titleFragment_to_scrollingFragment)}
+
         return binding.root
 
 

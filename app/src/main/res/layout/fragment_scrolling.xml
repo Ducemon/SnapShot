@@ -11,12 +11,30 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"/>
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="332dp"
+            android:orientation="vertical">
 
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp" />
+
+            <Button
+                android:id="@+id/gallButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginBottom="68dp"
+                android:paddingStart="@dimen/button_padding"
+                android:paddingEnd="@dimen/button_padding"
+                android:text="@string/test"
+                android:textColor="@color/black"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/main_fragment"
             android:name="com.example.snapshot.PhotoFragment"

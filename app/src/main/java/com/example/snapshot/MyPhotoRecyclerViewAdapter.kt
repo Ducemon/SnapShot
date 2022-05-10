@@ -9,11 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.snapshot.Image
 import com.example.snapshot.databinding.FragmentPhotoBinding
 
-/**
- * [RecyclerView.Adapter] that can display a [PictureItem] and makes a call to the
- * specified [OnListFragmentInteractionListener].
- * TODO: Replace the implementation with code for your data type.
- */
 class MyPhotoRecyclerViewAdapter(
     private var values: List<Image>,
 ) : RecyclerView.Adapter<MyPhotoRecyclerViewAdapter.ViewHolder>() {

@@ -94,4 +94,5 @@
     <string name="gallery">Gallery</string>
     <string name="play">Play</string>
     <string name="created_at">Name:</string>
+    <string name="test" />
 </resources>

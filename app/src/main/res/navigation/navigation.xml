@@ -26,5 +26,14 @@
         android:id="@+id/scrollingFragment"
         android:name="com.example.snapshot.ScrollingFragment"
         android:label="fragment_scrolling"
-        tools:layout="@layout/fragment_scrolling" />
+        tools:layout="@layout/fragment_scrolling" >
+        <action
+            android:id="@+id/action_scrollingFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.example.snapshot.PhotoFragment"
+        android:label="fragment_photo_gallery"
+        tools:layout="@layout/fragment_photo_gallery" />
 </navigation>

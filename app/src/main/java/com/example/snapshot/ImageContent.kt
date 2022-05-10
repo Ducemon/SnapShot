@@ -30,6 +30,20 @@ object ImageContent {
             }
         }
 
+    fun filter(search: String, dir: File) {
+        ITEMS.clear()
+        if (dir.exists()) {
+            val files = dir.listFiles()
+            for (file in files) {
+                val absolutePath = file.absolutePath
+                val extension = absolutePath.substring(absolutePath.lastIndexOf("."))
+                if (extension == ".jpg" && getNameFromUri(Uri.fromFile(file)).contains(search)) {
+                    loadImage(file)
+                }
+            }
+        }
+    }
+
     private fun getNameFromUri(uri: Uri): String {
         val split = uri.path!!.split("/").toTypedArray()
         val fileName = split[split.size - 1]
