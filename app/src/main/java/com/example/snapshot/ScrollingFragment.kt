@@ -42,6 +42,8 @@ class ScrollingFragment : Fragment() {
         viewBinding.gallButton.setOnClickListener{view : View ->
             view.findNavController().navigate(R.id.action_scrollingFragment_to_photoFragment)}
 
+        loadSavedImages(dir)
+
         return viewBinding.root
 
     }

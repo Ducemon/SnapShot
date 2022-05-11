@@ -8,24 +8,17 @@
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.snapshot.TitleFragment"
-        android:label="fragment_title"
-        tools:layout="@layout/fragment_title" >
-        <action
-            android:id="@+id/action_titleFragment_to_cameraXFragment"
-            app:destination="@id/cameraXFragment" />
-        <action
-            android:id="@+id/action_titleFragment_to_scrollingFragment"
-            app:destination="@id/scrollingFragment" />
-    </fragment>
+        android:label="Home"
+        tools:layout="@layout/fragment_title" />
 
     <fragment
         android:id="@+id/cameraXFragment"
         android:name="com.example.snapshot.CameraXFragment"
-        android:label="CameraXFragment" />
+        android:label="Camera" />
     <fragment
         android:id="@+id/scrollingFragment"
         android:name="com.example.snapshot.ScrollingFragment"
-        android:label="fragment_scrolling"
+        android:label="Gallery"
         tools:layout="@layout/fragment_scrolling" >
         <action
             android:id="@+id/action_scrollingFragment_to_photoFragment"
@@ -34,6 +27,6 @@
     <fragment
         android:id="@+id/photoFragment"
         android:name="com.example.snapshot.PhotoFragment"
-        android:label="fragment_photo_gallery"
+        android:label="Search"
         tools:layout="@layout/fragment_photo_gallery" />
 </navigation>

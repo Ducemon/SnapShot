@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
     tools:context=".ScrollingFragment"
     tools:ignore="SpeakableTextPresentCheck">
 
@@ -35,6 +36,7 @@
                 android:textSize="@dimen/button_text_size"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/main_fragment"
             android:name="com.example.snapshot.PhotoFragment"

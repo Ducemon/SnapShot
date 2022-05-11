@@ -94,9 +94,11 @@
     <string name="gallery">Gallery</string>
     <string name="play">Play</string>
     <string name="created_at">Name:</string>
-    <string name="test" />
+    <string name="test">Search</string>
     <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Camera</string>
+    <string name="title_notifications">Gallery</string>
+    <string name="takephoto">TakePhoto</string>
+    <string name="share">Share</string>
 </resources>

@@ -18,18 +18,21 @@
         <androidx.camera.view.PreviewView
             android:id="@+id/viewFinder"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fabSize="normal"
-            android:src="@drawable/ic_baseline_camera_alt_24"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="32dp"
+            android:layout_alignBottom="@+id/viewFinder"
             android:layout_centerHorizontal="true"
-            app:backgroundTint="@android:color/white"/>
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/takephoto"
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            app:backgroundTint="@android:color/white"
+            app:fabSize="normal" />
 
 
     </RelativeLayout>
