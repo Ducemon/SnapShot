@@ -99,7 +99,6 @@ class CameraXFragment: Fragment() {
                     contentValues)
                 .build()
         }
-        Log.e("PULA", MediaStore.Images.Media.EXTERNAL_CONTENT_URI.toString())
         // Set up image capture listener, which is triggered after photo has
         // been taken
         if (outputOptions != null) {
